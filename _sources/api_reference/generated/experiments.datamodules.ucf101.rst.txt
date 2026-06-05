@@ -1,0 +1,10 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+experiments.datamodules.ucf101
+==============================
+
+.. currentmodule:: experiments.datamodules.ucf101
+
+.. autoclass:: experiments.datamodules.ucf101
+   :members:
+   :show-inheritance:

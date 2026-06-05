@@ -1,0 +1,10 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+DiffusersUVitWrapper
+====================
+
+.. currentmodule:: nvsubquadratic.networks.huggingface_diffusers
+
+.. autoclass:: DiffusersUVitWrapper
+   :members:
+   :show-inheritance:

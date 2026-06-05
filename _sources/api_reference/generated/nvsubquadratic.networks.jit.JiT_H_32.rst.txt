@@ -1,0 +1,8 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+JiT\_H\_32
+==========
+
+.. currentmodule:: nvsubquadratic.networks.jit
+
+.. autofunction:: JiT_H_32

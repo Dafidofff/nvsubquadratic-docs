@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Protected — password required</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+          background:#0d1117; color:#c9d1d9; display:flex; min-height:100vh;
+          align-items:center; justify-content:center; margin:0; }
+  .box { background:#161b22; border:1px solid #30363d; border-radius:10px;
+          padding:2rem 2.25rem; width:min(360px,90vw); box-shadow:0 8px 30px rgba(0,0,0,.4); }
+  h1 { font-size:1.1rem; margin:0 0 1rem; font-weight:600; }
+  input { width:100%; box-sizing:border-box; padding:.6rem .7rem; font-size:1rem;
+           border-radius:6px; border:1px solid #30363d; background:#0d1117;
+           color:#c9d1d9; margin-bottom:.75rem; }
+  button { width:100%; padding:.6rem; font-size:1rem; border:0; border-radius:6px;
+            background:#238636; color:#fff; cursor:pointer; }
+  button:hover { background:#2ea043; }
+  .err { color:#f85149; font-size:.85rem; min-height:1.1rem; margin-top:.5rem; }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>This documentation is password-protected</h1>
+  <form id="f">
+    <input id="pw" type="password" placeholder="Password" autofocus autocomplete="current-password">
+    <button type="submit">Unlock</button>
+    <div class="err" id="err"></div>
+  </form>
+</div>
+<script>
+const CFG = {"ns": "b9a7e69b94d6", "iters": 200000, "salt": "xDOhtlt5483BpsXxulVwLA==", "iv": "Sdupr1KuZjRuNESl", "ct": "iFmlFspqYVeJIcbddlFyd9ooeFc6kjCdYHmoMyNgkjok51EwqMfJW1HBMwyzVHTmgp/UakiRZRII0/EQ06kU0xfXh4BD4yciGws6DXsM4Ke30kxrmStYYPLQmFF+KGT9OjIjzXmQq6pathCFN1VzVTv3pzzhZEB8cooHiw8GRLHimks6idD5l3kDdBQwGR7Gd1MMJzwFANgfR5FJRffyMBQ8fSm6OuUGpqvdW+ZBEDBeboW4IBIwdPkJCquekTATYEb734PPkMLVmKkKvD97iiRg9DJ4FfN0dqjA3eD9sa+6F/aL15o1e/QoQJSoR4EH1Ij1dUuTtXcavOzWHTQ8oEfIVmjRl99e3mePlWKc3Jk3YhCyBrIx+ksooI4mrxQKsvt6BhNIdSbM9dBjxOSSmU8rDrU/IYmGgC20YTMgE/eqeuoyH26c7RAnQ13Sd43fdlSl7Zjl+9KiGsdi1pxrk1qHCeAq1R1bC4Sklq4V/xfFVnWVpFmj/TabwNRzEoXNQ3kkD4F4agtRJ9/IfG2ZXPSOaVlxtIM86Cy9iDm4yqfL+SCX+dZsQju+auyZyvbq1gIsp2EIutdjg8939HzCG33EbEZZjbE0TC4RWW2WQT7WluBys5ZaCwq2+M0MVzj72BzSQM623tb9tGWbReKbBrw2+UhNwtuI5NBXrJSVdkKDTHO56HVve5wJW2zYJ87l166vND+LdH8jwf3icKh4+T+xlyLniqlGDkTw7v3m+rKcfWqwcau9NUDV7+NAFtrpWkAN/0EC4WCZ5wr4AaZ/MukhuJfr+9kUF4Cm2bvwI94VPNjsQ7ezz6vMHTkzYMIMopSd9jyKyJzAuqf9m2MWsgvyq976l+U5vWbBTiX6TOt7AnfhWk0Jy/bZohjdCJGkUqbjNaiftKdf4mDpfZ7dqavnxFo3B7FC6LJBu3W0Nm9ZPEKsZms3j+VDJS1MQsKLe8+8RCVQK3tInqSHITvdw2opNC3S5k5J6MI638zoG4sp+gnfdqI/AqfyUjvSxwPar3eDvUUIlHu8WEVyb08D7ctSgWOVBXD2MbtoXJglEOn4BeJKEdFvQ27KnDmJYGCGbREcT/Q2ekf0p3JHeHm3GPTIffoe9gi71CdS+kZtJWVR7AY8m+9HPKQmBh43VB/EhLWdzyS0j1p6uPCb7gJeKvdFt0JDQ+7i1v1AYMs2+pWV5K8FdRwPQNEKT8m9d2j+z3SqjXVCBl3UomTsm1+XxU+hG58tZ8FUXLa4Aqt+BLDgqFI1gfZVPBz8Fy47eafgSLdkqBAVyiSU9Rbb/umX/zPZ//Z8STR5m7N7n0zSlg7k7BR8l6VVh7yx0YRcdjhRbPfXv3ETnk60o1kSu07SHlXRDvsejB4YVP82EKrtwSBbb9CXgwnwtxufUFB+PmwazCbFTPtg7fhPzlGZV1oSxk9jck8D3+V5JMkq09ZYGIatQCXtmi+2gr90LF3mRsbV9Ej/X8E6Dp4JQMwM9fvmYmhKdIWJMfdf3z1c+WNbl/OT8WAfDVThjrLFyb5ysHuIC7kctZvvp3UXu+H4YkmMTnCZTJ3lFkDSjDCC/MsvvdRndpftckAmC1P4FTuHbA+eWhBiCK924sVWXYzT/lpILjwxIcylI4x33JNU0gndNQrC/9TtVTOItHsx4PYq0UlxkuAZupSVdXZx0PXxzi4izTnD0E8FzrWjfkGwEw3LdQ=="};
+const KEY = "docs-pw:" + CFG.ns;
+const dec = (s) => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+
+async function deriveKey(password, salt) {
+  const base = await crypto.subtle.importKey(
+    "raw", new TextEncoder().encode(password), "PBKDF2", false, ["deriveKey"]);
+  return crypto.subtle.deriveKey(
+    { name:"PBKDF2", salt, iterations: CFG.iters, hash:"SHA-256" },
+    base, { name:"AES-GCM", length:256 }, false, ["decrypt"]);
+}
+
+async function tryDecrypt(password) {
+  const key = await deriveKey(password, dec(CFG.salt));
+  const plain = await crypto.subtle.decrypt(
+    { name:"AES-GCM", iv: dec(CFG.iv) }, key, dec(CFG.ct));
+  return new TextDecoder().decode(plain);
+}
+
+async function unlock(password, remember) {
+  const html = await tryDecrypt(password);   // throws on wrong password
+  if (remember) try { sessionStorage.setItem(KEY, password); } catch (e) {}
+  document.open(); document.write(html); document.close();
+}
+
+document.getElementById("f").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const err = document.getElementById("err");
+  err.textContent = "";
+  try { await unlock(document.getElementById("pw").value, true); }
+  catch (_) { err.textContent = "Wrong password."; }
+});
+
+// Auto-unlock if we already have the password from this session.
+(async () => {
+  let saved = null;
+  try { saved = sessionStorage.getItem(KEY); } catch (e) {}
+  if (saved) { try { await unlock(saved, false); } catch (_) {
+    try { sessionStorage.removeItem(KEY); } catch (e) {}
+  } }
+})();
+</script>
+</body>
+</html>

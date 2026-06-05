@@ -1,0 +1,10 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+DiffusionConfig
+===============
+
+.. currentmodule:: experiments.default_cfg
+
+.. autoclass:: DiffusionConfig
+   :members:
+   :show-inheritance:

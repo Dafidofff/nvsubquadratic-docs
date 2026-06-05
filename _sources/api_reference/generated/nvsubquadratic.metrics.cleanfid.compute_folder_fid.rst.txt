@@ -1,0 +1,8 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+compute\_folder\_fid
+====================
+
+.. currentmodule:: nvsubquadratic.metrics.cleanfid
+
+.. autofunction:: compute_folder_fid

@@ -1,0 +1,10 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+BottleneckPatchEmbed
+====================
+
+.. currentmodule:: nvsubquadratic.networks.jit
+
+.. autoclass:: BottleneckPatchEmbed
+   :members:
+   :show-inheritance:

@@ -1,0 +1,8 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+rotate\_half
+============
+
+.. currentmodule:: nvsubquadratic.networks.jit_utils
+
+.. autofunction:: rotate_half

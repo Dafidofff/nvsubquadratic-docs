@@ -1,0 +1,10 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+DiffusionWrapper
+================
+
+.. currentmodule:: experiments.lightning_wrappers.diffusion_wrapper
+
+.. autoclass:: DiffusionWrapper
+   :members:
+   :show-inheritance:

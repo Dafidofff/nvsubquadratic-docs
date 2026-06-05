@@ -1,0 +1,10 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+TimestepEmbedder
+================
+
+.. currentmodule:: nvsubquadratic.networks.jit
+
+.. autoclass:: TimestepEmbedder
+   :members:
+   :show-inheritance:

@@ -1,0 +1,8 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+get\_1d\_sincos\_pos\_embed\_from\_grid
+=======================================
+
+.. currentmodule:: nvsubquadratic.networks.jit_utils
+
+.. autofunction:: get_1d_sincos_pos_embed_from_grid

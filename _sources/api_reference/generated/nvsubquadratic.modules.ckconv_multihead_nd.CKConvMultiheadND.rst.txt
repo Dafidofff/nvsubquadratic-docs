@@ -1,0 +1,10 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+CKConvMultiheadND
+=================
+
+.. currentmodule:: nvsubquadratic.modules.ckconv_multihead_nd
+
+.. autoclass:: CKConvMultiheadND
+   :members:
+   :show-inheritance:

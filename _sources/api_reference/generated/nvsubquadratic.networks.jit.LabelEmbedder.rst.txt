@@ -1,0 +1,10 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+LabelEmbedder
+=============
+
+.. currentmodule:: nvsubquadratic.networks.jit
+
+.. autoclass:: LabelEmbedder
+   :members:
+   :show-inheritance:

@@ -1,0 +1,8 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+fftconv2d\_fp16\_bhl
+====================
+
+.. currentmodule:: nvsubquadratic.ops.fftconv_fp16
+
+.. autofunction:: fftconv2d_fp16_bhl

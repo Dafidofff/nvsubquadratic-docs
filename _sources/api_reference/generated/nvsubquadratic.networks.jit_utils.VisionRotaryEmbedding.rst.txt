@@ -1,0 +1,10 @@
+﻿.. SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+VisionRotaryEmbedding
+=====================
+
+.. currentmodule:: nvsubquadratic.networks.jit_utils
+
+.. autoclass:: VisionRotaryEmbedding
+   :members:
+   :show-inheritance:
